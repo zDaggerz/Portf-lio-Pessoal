@@ -43,5 +43,23 @@
     <footer>
         <p>Desenvolvido por Felipe Leal da Rocha - Agosto de 2025</p>
     </footer>
+
+    </footer>
+    <script>
+        document.getElementById('btn-enviar-feedback').addEventListener('click', function() {
+            const nome = document.getElementById('nome').value;
+
+            if (nome === "") {
+                alert('Por favor, preencha seu nome.');
+                return;
+            }
+
+            alert('Obrigado pelo seu feedback, ' + nome + '!');
+
+            console.log('Feedback Recebido por: ' + nome);
+        });
+    </script>
+</body>
+</html>
 </body>
 </html>
